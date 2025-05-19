@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Personal Portfolio</title>
+   <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2721/2721296.png">
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <div class="portfolio">
+    <div class="nav-bar">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="portfolio-content">
+      <div class="details">
+        <h2>Lakshmipriya</h2>
+        <h3 id="role">Full Stack Developer</h3>
+        <h2 id="intro">
+          Hi I'm <strong style="color: rgb(255, 108, 180);">Lakshmipriya,</strong> from India
+        </h2>
+      </div>
+      <div class="img-container">
+        <img src="https://static.vecteezy.com/system/resources/previews/012/744/791/non_2x/cute-girl-working-on-computer-cartoon-icon-illustration-people-and-technology-icon-concept-isolated-premium-flat-cartoon-style-vector.jpg" />
+      </div>
+    </div>
+  </div>
+
+  <div id="about">
+    <div class="container">
+      <div class="about-col1">
+        <img src="https://img.freepik.com/premium-photo/female-developer-background_665280-9650.jpg" />
+      </div>
+      <div class="about-col2">
+        <h2>About Me</h2>
+        <p>Hello! I'm Lakshmipriya, currently pursuing a Bachelor of Engineering in Computer Science. I am passionate about technology and innovation, and I am excited to expand my knowledge and skills in the ever-evolving field of engineering.</p>
+
+        <div class="sub">
+          <p class="sub-value active-link" onclick="opentab('skills',event)">Skills</p>
+          <p class="sub-value" onclick="opentab('education',event)">Education</p>
+        </div>
+
+        <div class="about-content active-tab" id="skills">
+          <div class="skill-slider">
+            <video autoplay muted loop playsinline><source src="https://cdnl.iconscout.com/lottie/premium/thumb/c-programming-language-logo-animation-download-in-lottie-json-gif-static-svg-file-formats--coding-languages-logos-pack-animations-5332663.mp4" type="video/mp4"></video>
+            <video autoplay muted loop playsinline><source src="https://cdnl.iconscout.com/lottie/premium/thumb/html-logo-animation-download-in-lottie-json-gif-static-svg-file-formats--coding-programming-code-languages-logos-pack-company-brand-animations-5673053.mp4" type="video/mp4"></video>
+            <video autoplay muted loop playsinline><source src="https://cdnl.iconscout.com/lottie/premium/thumb/c-programming-language-logo-animation-download-in-lottie-json-gif-static-svg-file-formats--cpp-languages-logos-pack-animations-5332664.mp4" type="video/mp4"></video>
+            <video autoplay muted loop playsinline><source src="https://cdnl.iconscout.com/lottie/premium/thumb/javascript-programming-language-logo-animation-download-in-lottie-json-gif-static-svg-file-formats--js-development-languages-logos-pack-animations-5332666.mp4" type="video/mp4"></video>
+            <video autoplay muted loop playsinline><source src="https://cdnl.iconscout.com/lottie/premium/thumb/java-animated-icon-download-in-lottie-json-gif-static-svg-file-formats--logo-social-media-company-and-all-pack-logos-icons-5606041.mp4" type="video/mp4"></video>
+            <video autoplay muted loop playsinline><source src="https://cdnl.iconscout.com/lottie/premium/thumb/css-animated-icon-download-in-lottie-json-gif-static-svg-file-formats--logo-coding-pack-logos-icons-9780106.mp4" type="video/mp4"></video>
+          </div>
+        </div>
+
+        <div class="about-content" id="education">
+          <ul>
+            <li>Degree: Bachelor of Engineering (pursuing)</li>
+            <li>Specialization: Computer Science and Design</li>
+            <li>HSC: 82%</li>
+            <li>SSLC: 89%</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="projects">
+  <div class="container">
+    <h1 style=" margin-left: 100px ; margin-top: 200px; font-family: 'Dancing Script'; color: rgb(189, 21, 113); font-size: 3em;">Projects</h1>
+    <div class="single-project">
+      <i class="fab fa-github fa-3x"></i>
+      <div class="project-info">
+        <h3>Explore My GitHub</h3>
+        <p>Find all my open-source and personal projects.</p>
+        <a href="https://github.com/lakshmi-priya1424" target="_blank" class="view-all">
+          <span>View All</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="blog">
+    <div class="container">
+      <h1 class="section-title">My Blog</h1>
+      <div class="blog-list">
+        <div class="blog-card">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" />
+          <h3>How I Started Coding</h3>
+          <p>I began with curiosity and a laptop in college. My first program was “Hello, World!” and from there, I explored HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="blog-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGZD7Fb9AMgPAB4cDZNpdJkDK7ecHztcRgXw&s" />
+          <h3>Design Tips for Beginners</h3>
+          <p>Start simple: soft colors, readable fonts, and clear spacing. Good design feels effortless.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <h2>Contact Me</h2>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const tb = document.getElementsByClassName('sub-value');
+    const tc = document.getElementsByClassName('about-content');
+
+    function opentab(tabname, event) {
+      for (let tab of tb) tab.classList.remove("active-link");
+      for (let tabcon of tc) tabcon.classList.remove("active-tab");
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+</body>
+</html>
